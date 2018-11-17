@@ -30,10 +30,10 @@ void setup() {
   s = new Snake();
 
   b = new GravBox[] {
-    new GravBox(4, 200, 60, "The meeting point of math and literature"),
+    new GravBox(4, 200, 60, "The meeting point of math and language arts"),
     new GravBox(240, 160, 40, "Every program tells a story"),
     new GravBox(415, 200, 60, "Express yourself through computer programming"),
-    new GravBox(650, 300, 40, "A modern medium for creativity"),
+    new GravBox(650, 300, 40, "A modern means for creativity"),
     new GravBox(960, 200, 20, "Computing is cool!")
   };
 }
@@ -68,7 +68,8 @@ void drawFrame(PGraphics f) {
   pos += 30;
   f.textFont(fontA, 16);
   f.textAlign(BOTTOM, RIGHT);
-  f.text("Created by Hunter Damron using Processing.js for ENGL 102 with Dr. Rule at the University of South Carolina", 2, height-3);
+  f.text("Click anywhere to see program source code", 2, height-24);
+  f.text("Created by Hunter Damron using Processing.js for ENGL 102 with Dr. Rule at the University of South Carolina", 2, height-6);
   f.endDraw();
 }
 
